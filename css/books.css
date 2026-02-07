@@ -1,0 +1,162 @@
+:root {
+    color-scheme: dark;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background-color: #0f0f13;
+    color: #f2f2f2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #0f0f13;
+}
+
+.container {
+    width: min(1200px, 92vw);
+    margin: 0 auto;
+}
+
+.page-header {
+    background: #1a1b22;
+    padding: 32px 0 20px;
+    border-bottom: 1px solid #292a33;
+}
+
+.page-header h1 {
+    margin: 0 0 8px;
+    font-size: 2rem;
+}
+
+.page-header p {
+    margin: 0 0 16px;
+    color: #c6c6cf;
+}
+
+.language-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filter-chip {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #2a2b35;
+    color: #e8e8ee;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.2s ease;
+}
+
+.filter-chip:hover,
+.filter-chip.active {
+    background: #3b71f3;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 24px;
+    padding: 32px 0 48px;
+}
+
+.card {
+    background: #1b1c23;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #2d2f39;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.cover {
+    position: relative;
+    background: #111218;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.language-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #3b71f3;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.card-body {
+    padding: 16px;
+    flex: 1;
+}
+
+.card-body h2 {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+}
+
+.subtitle {
+    margin: 0 0 12px;
+    color: #b1b1bf;
+}
+
+.description {
+    margin: 0 0 12px;
+    color: #c9c9d6;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.asin {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #9fa0aa;
+}
+
+.card-footer {
+    padding: 16px;
+    border-top: 1px solid #2d2f39;
+}
+
+.button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #3b71f3;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.alert {
+    background: #2a2b35;
+    border: 1px solid #3c3d47;
+    padding: 16px;
+    border-radius: 10px;
+    margin: 32px auto;
+}
+
+code {
+    background: #14151b;
+    padding: 2px 6px;
+    border-radius: 6px;
+}
